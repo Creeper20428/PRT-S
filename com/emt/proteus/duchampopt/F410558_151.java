@@ -1,0 +1,75 @@
+/*    */ package com.emt.proteus.duchampopt;
+/*    */ 
+/*    */ import com.emt.proteus.runtime.api.Env;
+/*    */ import com.emt.proteus.runtime.api.Frame;
+/*    */ import com.emt.proteus.runtime.api.Function;
+/*    */ import com.emt.proteus.runtime.api.MainMemory;
+/*    */ 
+/*    */ public final class F410558_151 extends com.emt.proteus.runtime.api.ImplementedFunction
+/*    */ {
+/*    */   public static final int FNID = Integer.MAX_VALUE;
+/* 11 */   public static final Function _instance = new F410558_151();
+/* 12 */   public final Function resolve() { return _instance; }
+/*    */   
+/* 14 */   public F410558_151() { super("F410558_151", 3, false); }
+/*    */   
+/*    */   public int execute(int paramInt1, int paramInt2, int paramInt3)
+/*    */   {
+/* 18 */     call(paramInt1, paramInt2, paramInt3);
+/* 19 */     return 0;
+/*    */   }
+/*    */   
+/*    */   public int execute(Env paramEnv, Frame paramFrame, int paramInt1, int paramInt2, int paramInt3, int[] paramArrayOfInt, int paramInt4)
+/*    */   {
+/* 24 */     int i = paramFrame.getI32(paramArrayOfInt[paramInt4]);
+/* 25 */     paramInt4 += 2;
+/* 26 */     paramInt3--;
+/* 27 */     int j = paramFrame.getI32(paramArrayOfInt[paramInt4]);
+/* 28 */     paramInt4 += 2;
+/* 29 */     paramInt3--;
+/* 30 */     int k = paramFrame.getI32(paramArrayOfInt[paramInt4]);
+/* 31 */     paramInt4 += 2;
+/* 32 */     paramInt3--;
+/* 33 */     call(i, j, k);
+/* 34 */     return paramInt4;
+/*    */   }
+/*    */   
+/*    */ 
+/*    */   public static void call(int paramInt1, int paramInt2, int paramInt3)
+/*    */   {
+/* 40 */     int i = 0;
+/* 41 */     long l1 = 0L;
+/* 42 */     long l2 = 0L;
+/*    */     
+/*    */ 
+/*    */     try
+/*    */     {
+/* 47 */       com.emt.proteus.runtime.api.Jump.label(410576);
+/* 48 */       i = paramInt1 + (paramInt3 << 3);
+/* 49 */       l1 = MainMemory.getI64(i);
+/* 50 */       paramInt1 += (paramInt2 << 3);
+/* 51 */       l2 = MainMemory.getI64(paramInt1);
+/* 52 */       if (l1 > l2)
+/*    */       {
+/* 54 */         MainMemory.setI64(i, l2);
+/* 55 */         MainMemory.setI64(paramInt1, l1);
+/*    */       }
+/*    */       
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/* 65 */       com.emt.proteus.runtime.api.Jump.label(8000000); return;
+/*    */     }
+/*    */     finally {}
+/*    */   }
+/*    */ }
+
+
+/* Location:              /home/jkim13/Desktop/emediatrack/codejar_s.jar!/com/emt/proteus/duchampopt/F410558_151.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       0.7.1
+ */

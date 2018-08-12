@@ -1,0 +1,82 @@
+/*    */ package com.emt.proteus.duchampopt;
+/*    */ 
+/*    */ import com.emt.proteus.runtime.api.Env;
+/*    */ import com.emt.proteus.runtime.api.Frame;
+/*    */ import com.emt.proteus.runtime.api.Function;
+/*    */ import com.emt.proteus.runtime.api.MainMemory;
+/*    */ 
+/*    */ public final class _ZN10Statistics14StatsContainerIfEaSERKS1_ extends com.emt.proteus.runtime.api.ImplementedFunction
+/*    */ {
+/*    */   public static final int FNID = 2643;
+/* 11 */   public static final Function _instance = new _ZN10Statistics14StatsContainerIfEaSERKS1_();
+/* 12 */   public final Function resolve() { return _instance; }
+/*    */   
+/* 14 */   public _ZN10Statistics14StatsContainerIfEaSERKS1_() { super("_ZN10Statistics14StatsContainerIfEaSERKS1_", 2, false); }
+/*    */   
+/*    */   public int execute(int paramInt1, int paramInt2)
+/*    */   {
+/* 18 */     call(paramInt1, paramInt2);
+/* 19 */     return 0;
+/*    */   }
+/*    */   
+/*    */   public int execute(Env paramEnv, Frame paramFrame, int paramInt1, int paramInt2, int paramInt3, int[] paramArrayOfInt, int paramInt4)
+/*    */   {
+/* 24 */     int i = paramFrame.getI32(paramArrayOfInt[paramInt4]);
+/* 25 */     paramInt4 += 2;
+/* 26 */     paramInt3--;
+/* 27 */     int j = paramFrame.getI32(paramArrayOfInt[paramInt4]);
+/* 28 */     paramInt4 += 2;
+/* 29 */     paramInt3--;
+/* 30 */     call(i, j);
+/* 31 */     return paramInt4;
+/*    */   }
+/*    */   
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */   public static void call(int paramInt1, int paramInt2)
+/*    */   {
+/*    */     try
+/*    */     {
+/* 42 */       if (paramInt1 != paramInt2) {
+/*    */         break label28;
+/*    */       }
+/*    */       
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */       break label157;
+/*    */       
+/*    */ 
+/*    */ 
+/*    */ 
+/*    */       label28:
+/*    */       
+/*    */ 
+/*    */ 
+/* 58 */       MainMemory.setI8(paramInt1 + 4, MainMemory.getI8(paramInt2 + 4));
+/* 59 */       MainMemory.setF32(paramInt1 + 8, MainMemory.getF32(paramInt2 + 8));
+/* 60 */       MainMemory.setF32(paramInt1 + 12, MainMemory.getF32(paramInt2 + 12));
+/* 61 */       MainMemory.setF32(paramInt1 + 16, MainMemory.getF32(paramInt2 + 16));
+/* 62 */       MainMemory.setF32(paramInt1 + 20, MainMemory.getF32(paramInt2 + 20));
+/* 63 */       MainMemory.setF32(paramInt1 + 24, MainMemory.getF32(paramInt2 + 24));
+/* 64 */       MainMemory.setF32(paramInt1 + 28, MainMemory.getF32(paramInt2 + 28));
+/* 65 */       MainMemory.setI8(paramInt1 + 32, MainMemory.getI8(paramInt2 + 32));
+/* 66 */       MainMemory.setI8(paramInt1 + 33, MainMemory.getI8(paramInt2 + 33));
+/*    */       
+/*    */ 
+/*    */       label157:
+/*    */       
+/*    */ 
+/* 72 */       return;
+/*    */     }
+/*    */     finally {}
+/*    */   }
+/*    */ }
+
+
+/* Location:              /home/jkim13/Desktop/emediatrack/codejar_s.jar!/com/emt/proteus/duchampopt/_ZN10Statistics14StatsContainerIfEaSERKS1_.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       0.7.1
+ */
